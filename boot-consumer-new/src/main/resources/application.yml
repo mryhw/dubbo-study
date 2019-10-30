@@ -1,0 +1,14 @@
+server:
+  port: 9000
+
+dubbo:
+  application:
+    name: boot-consumer
+  registry:
+    address: localhost:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20882
+  monitor:
+    protocol: registry
