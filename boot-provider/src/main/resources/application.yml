@@ -6,8 +6,16 @@ dubbo:
     name: bpoot-provider
   registry:
     address: zookeeper://localhost:2181
+    check: false
   protocol:
     name: dubbo
     port: 20880
   monitor:
     protocol: registry
+
+  consumer:
+    check: false
+    retries: 3
+    timeout: 3000
+
+

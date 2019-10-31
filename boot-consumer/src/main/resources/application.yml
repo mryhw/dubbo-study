@@ -7,9 +7,13 @@ dubbo:
   registry:
     address: localhost:2181
     protocol: zookeeper
+    check: false
   protocol:
     name: dubbo
     port: 20881
   monitor:
     protocol: registry
-
+  consumer:
+    check: false
+    timeout: 3000
+    retries: 3
