@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.6.5</version>
+            <version>2.6.12</version>
         </dependency>
 
         <!-- dubbo 2.6 之后必须用他 操作 zk, 2.5之前的可以使用 zookeeper-cli -->
